@@ -1,10 +1,3 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
@@ -33,6 +26,8 @@ const Layout = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
+        <img src="/headerImage.jpg" alt="" />
+        <p>共通のLayoutです。この部分はページを切り替えてもデザインが変わりません。</p>
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with
